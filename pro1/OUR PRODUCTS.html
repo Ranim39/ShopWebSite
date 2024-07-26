@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        body {
+            background-color: #ffebcc;
+        }
+        nav a {
+            font-size: xx-large;
+            color: rgb(50, 48, 48);
+            margin-top: 60px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        nav img {
+            justify-content: center;
+            width: 150px;
+        }
+        #product1 {
+            text-align: center;
+        }
+        #product1 .pro-container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            flex-wrap: wrap;
+        }
+        #product1 .pro {
+            width: calc(25% - 40px);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #cce7d0;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+            transition: 0.2s ease;
+            position: relative;
+        }
+        #product1 .pro:hover {
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+        }
+        #product1 .pro img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        #product1 .pro .des {
+            text-align: start;
+            padding: 10px 0;
+        }
+        #product1 .pro .des span {
+            color: #606063;
+            font-size: 12px;
+        }
+        #product1 .pro .des h5 {
+            padding-top: 7px;
+            color: #1a1a1a;
+            font-size: 14px;
+        }
+        #product1 .pro .des h4 {
+            padding-top: 7px;
+            font-size: 15px;
+            font-weight: 700;
+            color: #088178;
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .quantity-controls button {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .quantity-controls input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .total-price {
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+          
+            color: #088178;
+        }
+       
+        .new {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.new .pro {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.new .pro img {
+    width: 100%; 
+    height: auto;
+    border-bottom: 1px solid #ddd; 
+}
+.new .pro .des {
+    padding: 10px; 
+    text-align: center; 
+}
+
+.new .pro h5 {
+    font-size: 16px; 
+    color: #333; 
+    margin: 10px ;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="HOME1.html">HOME</a>
+            <a href="OUR STORY.html">OUR STORY</a>
+            <img src="../picsss/f746c38a2024210c162f27e20c8c741d-modified.png" alt="logo">
+            <a href="OUR PRODUCTS.html">PRODUCTS</a>
+            <a href="SIGN IN.html">SIGN IN</a>
+        </nav>
+    </header>
+    <main>
+        <section id="product1" class="section-p1">
+            <h2>Our Products</h2>
+            <p>Our cookies are delightful baked treats, often sweet and chewy, made with a variety of ingredients and flavors that offer comfort and indulgence in every bite.</p>
+            <div class="pro-container">
+             
+                <div class="pro">
+                    <img src="../picsss/image-asset (1).jpeg" alt="POWER BREAKFAST">
+                    <div class="des">
+                        <span>Granola cookie with dried fruits, nuts, and seeds.</span>
+                        <h5>POWER BREAKFAST</h5>
+                        <h4>4.8dt</h4>
+                        <div class="quantity-controls">
+                            <button onclick="changeQuantity(this, -1)">-</button>
+                            <input type="text" value="0" readonly>
+                            <button onclick="changeQuantity(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="../picsss/image-asset.jpeg" alt="RAINBOW NATION">
+                    <div class="des">
+                        <span>Vanilla cookie with milk chocolate chips.</span>
+                        <h5>RAINBOW NATION</h5>
+                        <h4>3.7dt</h4>
+                        <div class="quantity-controls">
+                            <button onclick="changeQuantity(this, -1)">-</button>
+                            <input type="text" value="0" readonly>
+                            <button onclick="changeQuantity(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pro">
+                    <img src="../picsss/ALL.jpeg" alt="ALL THAT JAZZ">
+                    <div class="des">
+                        <span>Triple-chocolate fudge cookie with candy-coated chocolate beans.</span>
+                        <h5>ALL THAT JAZZ</h5>
+                        <h4>5.2dt</h4>
+                        <div class="quantity-controls">
+                            <button onclick="changeQuantity(this, -1)">-</button>
+                            <input type="text" value="0" readonly>
+                            <button onclick="changeQuantity(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="pro">
+                    <img src="../picsss/ROCKY.jpeg" alt="ROCKY MOUNTAIN ROAD">
+                    <div class="des">
+                        <span>Belgian chocolate and cranberry cookie with meringue and honeycomb.</span>
+                        <h5>ROCKY MOUNTAIN ROAD</h5>
+                        <h4>6.3dt</h4>
+                        <div class="quantity-controls">
+                            <button onclick="changeQuantity(this, -1)">-</button>
+                            <input type="text" value="0" readonly>
+                            <button onclick="changeQuantity(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="pro">
+                    <img src="../picsss/MNT.jpg" alt="MOUNT FUDGEMORE">
+                    <div class="des">
+                        <span>Triple chocolate and fudge cookie with a rich taste.</span>
+                        <h5>MOUNT FUDGEMORE</h5>
+                        <h4>4.5dt</h4>
+                        <div class="quantity-controls">
+                            <button onclick="changeQuantity(this, -1)">-</button>
+                            <input type="text" value="0" readonly>
+                            <button onclick="changeQuantity(this, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="total-price">
+                <h2>Total Price: </h2><h2 id="total">0 dt</h2>
+            </div>
+        </section>
+        <h2 style="text-align: center;">COMING SOON :Three popular Fine Cookie Co. flavours have been made with lashings of indulgent ingredients, and have been certified as suitable for coeliacs. Individually wrapped and perfect to grab and go.</h2>
+    <section class="new"><div class="pro">
+            <img src="../picsss/CCC.jpg" height="300px" alt="">
+            <div class="des">
+                <span></span>
+                <h5>CHOCOLATE BOX BROWNIE </h5>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="../picsss/sav.jpg" height="300px" alt="">
+            <div class="des">
+                <span></span>
+                <h5>SALT LAKE CARAMEL </h5>
+            </div>
+        </div>
+        <div class="pro">
+            <img src="../picsss/kik.jpg" height="300px" alt="">
+            <div class="des">
+                <span></span>
+                <h5>RAINBOW NATION </h5>
+            </div>
+        </div>
+    </section>
+    </div>
+    </main>
+
+    <script>
+        function changeQuantity(button, change) {
+            const input = button.parentElement.querySelector('input');
+            let quantity = parseInt(input.value);
+            quantity = Math.max(quantity + change, 0);
+            input.value = quantity;
+            updateTotal();
+        }
+
+        function updateTotal() {
+            const products = document.querySelectorAll('.pro');
+            let total = 0;
+            products.forEach(product => {
+                const price = parseFloat(product.querySelector('h4').textContent);
+                const quantity = parseInt(product.querySelector('input').value);
+                total += price * quantity;
+            });
+            document.getElementById('total').textContent = `${total.toFixed(2)} dt`;
+        }
+    </script>
+</body>
+</html>
